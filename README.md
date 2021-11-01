@@ -5,21 +5,21 @@ This is a [Moleculer](https://moleculer.services/)-based microservices project. 
 
 ## Usage
 Start the project with `npm run dev` command. 
-After starting, open the http://localhost:3000/ URL in your browser. 
-On the welcome page you can test the generated services via API Gateway and check the nodes & services.
+After starting, open the http://localhost:5000/ URL in your browser.
 
 In the terminal, try the following commands:
 - `nodes` - List all connected nodes.
 - `actions` - List all registered service actions.
-- `call greeter.hello` - Call the `greeter.hello` action.
-- `call greeter.welcome --name John` - Call the `greeter.welcome` action with the `name` parameter.
-- `call products.list` - List the products (call the `products.list` action).
+- `call suspects.list` - Call the `suspects.list` action.
+- `call passengers.check --name Arlequina --temperature 37` - Call the `passengers.check` action with the `name` and `temperature` parameter.
 
 
 ## Services
 - **api**: API Gateway services
-- **greeter**: Sample service with `hello` and `welcome` actions.
-- **products**: Sample DB service. To use with MongoDB, set `MONGO_URI` environment variables and install MongoDB adapter with `npm i moleculer-db-adapter-mongo`.
+- **suspects**: DB service responsible for providing a list of known suspects. To use with MongoDB, set `MONGO_URI` environment variables and install MongoDB adapter with `npm i moleculer-db-adapter-mongo`.
+- - **passengers**: Service responsible for receive passengers name and check their temperature. If the temperature is greater than or equal to 38 degree, an event fever.detected is emitted warning that fever was detected and doctors will be awaited.- 
+- - **doctors**: Service responsible for listening to events `fever.detected` and providing appropriate care.
+- - **lab**: Service that will be the agent of the moleculer lab.
 
 ## Mixins
 - **db.mixin**: Database access mixin for services. Based on [moleculer-db](https://github.com/moleculerjs/moleculer-db#readme)
