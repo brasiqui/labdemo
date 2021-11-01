@@ -4,7 +4,7 @@
 This is a [Moleculer](https://moleculer.services/)-based microservices project. Generated with the [Moleculer CLI](https://moleculer.services/docs/0.14/moleculer-cli.html).
 
 ## Usage
-Start the project with `npm run dev` command. 
+After `npm install`, start the project with `npm run dev` command. 
 After starting, open the http://localhost:5000/ URL in your browser.
 
 In the terminal, try the following commands:
