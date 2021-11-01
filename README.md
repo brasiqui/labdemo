@@ -17,9 +17,9 @@ In the terminal, try the following commands:
 ## Services
 - **api**: API Gateway services
 - **suspects**: DB service responsible for providing a list of known suspects. To use with MongoDB, set `MONGO_URI` environment variables and install MongoDB adapter with `npm i moleculer-db-adapter-mongo`.
-- - **passengers**: Service responsible for receive passengers name and check their temperature. If the temperature is greater than or equal to 38 degree, an event fever.detected is emitted warning that fever was detected and doctors will be awaited.- 
-- - **doctors**: Service responsible for listening to events `fever.detected` and providing appropriate care.
-- - **lab**: Service that will be the agent of the moleculer lab.
+- **passengers**: Service responsible for receive passengers name and check their temperature. If the temperature is greater than or equal to 38 degree, an event fever.detected is emitted warning that fever was detected and doctors will be awaited.- 
+- **doctors**: Service responsible for listening to events `fever.detected` and providing appropriate care.
+- **lab**: Service that will be the agent of the moleculer lab.
 
 ## Mixins
 - **db.mixin**: Database access mixin for services. Based on [moleculer-db](https://github.com/moleculerjs/moleculer-db#readme)
