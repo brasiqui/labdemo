@@ -10,13 +10,13 @@ module.exports = {
 	methods: {
 		async seedDB() {
 			await this.adapter.insertMany([
-				{ name: "Saruman", passport: "LOR1000", photo: "https://shorturl.at/ginB7" },
-				{ name: "Cersei", passport: "GOT2000", photo: "https://shorturl.at/gkzMQ" },
+				{ name: "Saruman", passport: "LOR1000", photo: "https://shorturl.at/cBK14" },
+				{ name: "Cersei", passport: "GOT2000", photo: "https://shorturl.at/dAJY9" },
 				{ name: "Joker", passport: "BAT3000", photo: "https://shorturl.at/knozV" },
-				{ name: "Walter", passport: "BRE4000", photo: "https://shorturl.at/ekrMO" },
+				{ name: "Walter", passport: "BRE4000", photo: "https://shorturl.at/dmnpE" },
 				{ name: "Magneto", passport: "XMN5000", photo: "https://shorturl.at/kCKLZ" },
 				{ name: "Thanos", passport: "AVE6000", photo: "https://shorturl.at/qQTU9" },
-				{ name: "Arlequina", passport: "SSQ7000", photo: "https://shorturl.at/nwACK" }
+				{ name: "Arlequina", passport: "SSQ7000", photo: "https://shorturl.at/clB15" }
 			]);
 		}
 	}
